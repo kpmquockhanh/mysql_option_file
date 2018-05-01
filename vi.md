@@ -7,7 +7,7 @@
 
 Hầu hết các chương trình MySQL chỉ có thể đọc các tùy chọn khởi đầu từ các file tùy chọn ( đôi khi nó được gọi là các file cấu hình). Các file tùy chọn cung cấp 1 cách thuận tiện để đặc tả các tùy chọn thường được sử dụng để chúng không cần được nhập vào dòng lệnh mỗi khi bạn chạy chương trình,
 
-Để xác định lúc mà chương trình đọc các file tùy chọn, gọi nó với tùy chọn '\--help`. ( Với [**mysqld**][1], sử dụng [`\--verbose`][2] và [`\--help`][3].)
+Để xác định xem chương trình đọc các file tùy chọn hay không, gọi nó với tùy chọn '\--help`. ( Với [**mysqld**][1], sử dụng [`\--verbose`][2] và [`\--help`][3].)
 Nếu chương trình đọc các file tùy chọn, tin nhắn hỗ trợ sẽ chỉ định các file mà nó tìm kiếm và các nhómóm tùy chọn nóó nhận ra.
 
 Ghi chú:
