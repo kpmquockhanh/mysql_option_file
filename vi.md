@@ -12,7 +12,7 @@ Nếu chương trình đọc các file tùy chọn, tin nhắn hỗ trợ sẽ c
 
 Ghi chú:
 
-1 chương trình MySQL bắt đầu với tùy chọn `\--no-defaults` sẽ đọc các file không tùy chọn thay vì `.mylogin.cnf`. 
+1 chương trình MySQL bắt đầu với tùy chọn `\--no-defaults` sẽ không đọc các file tùy chọn trừ `.mylogin.cnf`. 
 
 Nhiều file tùy chọn là các file văn bản thần tùy, được tạo bằng cách sử dụng bất cứ trình biên soạn văn bản nào. Có ngoại lệ là khi file `.mylogin.cnf` chưa tùy chọn phần đăng nhập. Đây là  file được mã hóa được tạo bởi tiện ích [**mysql_config_editor**][4]. Xem  [Mục 4.6.6, "**mysql_config_editor** —  Cấu hình tiện tích MySQL"][4]. 1 "phần đăng nhập" là 1 nhóm tùy chọn mà cho phép những tùy chọn nhất đinh: `host`, `user`, `password`, `port` và `socket`. Chương trình khách đặc tả phần đăng nhập nào để đọc từ `.mylogin.cnf` sử dụng tùy chọn [`\--login-path`][5].
 
