@@ -81,7 +81,7 @@ Mô tả dưới đây của cú pháp file tùy chọn áp dụng cho các file
 
 Bất cứ tùy chọn nào có thể được đưa ra trong dòng lệnh khi chạy 1 chương trình MySQL đều có thể được đưa ra trong các file tùy chọn. Để lấy danh sách các tùy chọn khả dụng cho chương trình, chạy nó với tùy chọn `\--help`. (Với **[mysqld**][1], sử dụng `[\--verbose`][2] và `[\--help`][3].) 
 
-Cú pháo để đặt tả các tùy chọn trong file tùy chọn tương tự như trong cú pháp dòng lệnh ( xem  [Phần 4.2.4, "Sử dụng các tùy chọn trong dòng lệnh"][14]).
+Cú pháp để đặc tả các tùy chọn trong file tùy chọn tương tự như trong cú pháp dòng lệnh ( xem  [Phần 4.2.4, "Sử dụng các tùy chọn trong dòng lệnh"][14]).
 Tuy nhiên, trong 1 file tùy chọn, bạn sẽ bỏ 2 dấu gạch ngang đầu trong tên tùy chọn và bạn đặc tả chỉ 1 tùy chọn cho mỗi dòng mà thôi. Ví dụ`\--quick` và `\--host=localhost` trong dòng lệnh nên được đặc tả thành `quick` và `host=localhost` trên các dòng riêng biệt trong file tùy chọn. Để đặc tả 1 tùy chọn cho định dạng `\--loose-_`tên_opt`_` trong file tùy chọn, hãy viết nó thế này `loose-_`opt_name`_`. 
 
 Các dòng rỗng bên trong các file tùy chọn sẽ bi loại bỏ. Các dòng không rỗng có thể theo bất kỳ định dạng nào sau đây:
