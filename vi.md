@@ -7,8 +7,7 @@
 
 Hầu hết các chương trình MySQL chỉ có thể đọc các tùy chọn khởi đầu từ các file tùy chọn ( đôi khi nó được gọi là các file cấu hình). Các file tùy chọn cung cấp 1 cách thuận tiện để đặc tả các tùy chọn thường được sử dụng để chúng không cần được nhập vào dòng lệnh mỗi khi bạn chạy chương trình,
 
-Để xác định xem chương trình đọc các file tùy chọn hay không, gọi nó với tùy chọn '\--help`. ( Với [**mysqld**][1], sử dụng [`\--verbose`][2] và [`\--help`][3].)
-Nếu chương trình đọc các file tùy chọn, tin nhắn hỗ trợ sẽ chỉ định các file mà nó tìm kiếm và các nhómóm tùy chọn nóó nhận ra.
+Để xác định xem chương trình đọc các file tùy chọn hay không, gọi nó với tùy chọn `\--help`. (Đối với [**mysqld**][1], sử dụng [`\--verbose`][2] và [`\--help`][3].) Nếu chương trình đọc các file tùy chọn, tin nhắn hỗ trợ sẽ chỉ định các file mà nó tìm kiếm và các nhómóm tùy chọn nóó nhận ra.
 
 Ghi chú:
 
@@ -68,7 +67,7 @@ Trên các nền tảng Unix, MySQL loại bỏ các file cấu hình mà có th
 
 Trong bảng trên, `~` đại diện cho thư mục home của người dùng hiện tại(giá trị của `$HOME`). 
 
-_`SYSCONFDIR`_ đại diện cho thư mục được đặc tả với tùy chọn [`SYSCONFDIR`][10] để **CMake** khi MySQL được xây dựng. Mặc định, đây là thứ mục `etc` được đặt trong thư mục cài đặt được biên dịch.
+_`SYSCONFDIR`_ đại diện cho thư mục được đặc tả với tùy chọn [`SYSCONFDIR`] [10] để **CMake** khi MySQL được xây dựng. Mặc định, đây là thứ mục `etc` được đặt trong thư mục cài đặt được biên dịch.
 
 `MYSQL_HOME` là 1 biến môi trường chưa đường dẫn đến thư mục chứa file `my.cnf` riêng cho máy chủ. Nếu `MYSQL_HOME` không được đặt và bạn bắt đầu máy chủ sử dụng chương trình [**mysqld_safe**][11] , [**mysqld_safe**][11] sẽ đặt nó thành _`BASEDIR`_, thư mục cài đắt gốc của MySQL. 
 
